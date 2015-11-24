@@ -9,3 +9,7 @@ env:
 install: true
 script:
  - if [ "$FOO" == "bar" ]; then foobar; fi
+
+matrix:
+ allow_failures:
+  - env: FOO="bar"
